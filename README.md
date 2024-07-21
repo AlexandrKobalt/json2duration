@@ -40,7 +40,7 @@ func main() {
     jsonData := {"duration": 120}
 
     var data struct {
-        Duration duration.Seconds json:"duration"
+        Duration json2duration.Seconds json:"duration"
     }
 
     err := json.Unmarshal([]byte(jsonData), &data)
